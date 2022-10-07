@@ -32,11 +32,14 @@ header{
     padding-top: 61px;
 }
 
+.header-left{
+    a:hover {border-bottom: 3px solid colors.$primary-color;}
+}
+
 nav{
     font-weight: bold;
     ul{
-        display: flex;
-    }
+        display: flex;}
     a{
         color: colors.$main-font-color;
         text-decoration: none;
@@ -169,5 +172,6 @@ margin-right: 30px;}
 
 a:hover{
     transform: scaleY(2);
+    border-bottom: 3px solid colors.$primary-color;
 }
 }

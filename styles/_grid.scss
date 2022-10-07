@@ -1,9 +1,10 @@
+@use 'colors';
+
 $award-height: 110px;
 $grid-stroke-color: #979797;
 
 .photo-grid__container{
 
-    background-color: blue;
     display: grid;
     max-width: 1100px;
     width: 100%;
@@ -44,16 +45,31 @@ $grid-stroke-color: #979797;
 &.eight{ grid-area: 14 / 4 / 23 / 7;
 }
 
+&.nine{ grid-area: 18 / 7 / 27 / 10;
+}
+
+&.ten{ grid-area: 24 / 1 / 33 / 4;
+}
+
+&.eleven{ grid-area: 23 / 4 / 33 / 7;
+}
+
+&.twelve{ grid-area: 27 / 7 / 33 / 10;
+}
+
 }
 
  
 
-.photo-grid__element:hover .overlay{opacity: 0.8;}
+.photo-grid__element:hover .overlay{
+    opacity: 0.4;
+    cursor: pointer;
+}
 
 
  .overlay{
      position: absolute;
-     background-color: aqua;
+     background-color: colors.$primary-color;
      opacity: 0;
      width: 100%;
      height: 100%;
@@ -80,7 +96,7 @@ $grid-stroke-color: #979797;
     border-bottom: 1px solid $grid-stroke-color;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(3, 2fr) 1fr;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, fr);
 
     h4{
@@ -96,61 +112,62 @@ $grid-stroke-color: #979797;
 }
 
 .awards__item{ 
-&.one{
-    grid-area: 1/1/2/2;}
-&.two{
-    grid-area: 1/2/2/3;}
-&.three{
-    max-width: 190px;
-    width: 100%;
-    height: $award-height;
-    grid-area: 1/3/2/4;}
-&.three-year{
-    grid-area: 1/4/2/5;
-}
-&.four{
-    border-bottom: 1px solid $grid-stroke-color;
-    grid-area: 2/1/3/span1;}
-&.five{
-    border-bottom: 1px solid $grid-stroke-color;
-    grid-area: 2/2/3/span1;}
-&.six{
+    &.one{
+        grid-area: 1/1/2/2;}
+
+
+    &.three{
+        grid-area: 1/3/2/4;}
+
+    &.four{
+        grid-area: 1/4/2/5;}
     
-    max-width: 190px;
-    width: 100%;
-    height: $award-height;
-    grid-area: 2/3/4/span1;}
-&.six-year{
-    border-bottom: 1px solid $grid-stroke-color;
-    grid-area: 2/4/3/5;
-}
-&.seven{
-    grid-area: 3/1/4/2;}
-&.eight{
-    grid-area: 3/2/4/3;}
-&.nine{
-    max-width: 190px;
-    width: 100%;
-    height: $award-height;
-    grid-area: 3/3/4/4;}
-&.nine-year{
-    grid-area: 3/4/4/5;
-}
+    &.five{
+        grid-area: 1/5/2/6;}
 
-&.ten{
-    grid-area: 4/1/5/2;}
-&.eleven{
-    grid-area: 4/2/5/3;}
-&.twelve{
-    max-width: 190px;
-    width: 100%;
-    height: $award-height;
-    grid-area: 4/3/5/4;}
-&.twelve-year{
-    grid-area: 4/4/5/5;
-}
+        &.stroke{
+            grid-area: 2/1/3/span1;
+            border-bottom: 1px solid $grid-stroke-color;}
 
-}
+        &.eight{
+            grid-area: 2/3/3/4;}
+
+
+        &.nine{
+            grid-area: 2/4/3/5;}
+
+
+        &.ten{
+            grid-area: 2/5/3/6;}
+
+        &.eleven{
+            grid-area: 3/1/4/2;}
+
+        &.twelve{
+            grid-area: 3/2/4/3;}
+
+        &.thirteen{
+            grid-area: 3/3/4/4;}
+
+        &.fourteen{
+            grid-area: 3/4/4/5;}
+
+        &.fifteen{
+            grid-area: 3/5/4/6;}
+
+        &.eighteen{
+            grid-area: 4/3/5/4;}
+
+        &.nineteen{
+            grid-area: 4/4/5/5;}
+
+        &.twenty{
+            grid-area: 4/5/5/6;}
+
+
+    
+    }
+
 
 .project{
     display: grid;
