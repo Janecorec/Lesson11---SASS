@@ -1,0 +1,46 @@
+.contact-form{
+    max-width: 475px;
+    width: 100%;
+}
+    label{
+        display: inline;
+
+    }
+    input, textarea{
+        display: block;
+        width: 475px;
+        padding: .5rem;
+        padding-bottom: 16px;
+        background: none;
+        border: none;
+        border-bottom: solid 1px #9DBEBB;
+        margin-bottom: 40px;
+    }
+
+::placeholder{
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.sendbtn{
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    width: 125px;
+    height: 50px;
+    line-height: 21px;
+    border: 0;
+    background-color: #4A4FF2;
+    color: #FFFFFF;
+    transition: .5s background ease;
+    
+    margin: 1rem 0;
+
+
+&:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #4A4FF2;
+    border: 2px solid #4A4FF2;}
+}

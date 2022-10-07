@@ -1,0 +1,173 @@
+@use 'fonts';
+@use 'colors';
+
+@import 'grid';
+@import 'form';
+body{
+    font-family: fonts.$main-font;
+    font-size: 16px;
+    background-color: lightgrey;
+    color: colors.$main-font-color;
+}
+
+.main-container{
+
+    max-width: 1360px;
+    width: 100%;
+    background-color: white;
+    margin: auto;
+    padding-bottom: 47px;
+}
+
+header,footer,main,section{
+    max-width: 1110px;
+    width: 100%;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 180px;
+    padding-top: 61px;
+}
+
+nav{
+    font-weight: bold;
+    ul{
+        display: flex;
+    }
+    a{
+        color: colors.$main-font-color;
+        text-decoration: none;
+    &:hover{
+        color: colors.$primary-color;
+    }
+    }
+    li{
+        margin-left: 29px;
+
+    }
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 140px;
+}
+
+.top-left{
+    max-width: 635px;
+    width: 100%;
+
+p{
+    line-height: 26px;
+    margin-top: 29px;
+}
+
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 60px;
+    letter-spacing: 0px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    color: colors.$primary-color;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    max-width: 635px;
+}
+
+.contact{
+    max-width: 475px;
+    width: 100%;
+}
+
+.contact-text{
+    max-width: 445px;
+    width: 100%;
+}
+
+.line{
+    width: 30px;
+    border-bottom: 2px solid colors.$main-font-color;
+}
+
+.slogan{
+    font-size: 18px;
+    font-style: italic;
+    line-height: 23px;
+    margin-right: 20px;
+}
+
+.service-list{
+    display: flex;
+    justify-content: space-between;
+    ul{        
+        width: 450px;
+        font-size: 18px;
+        margin-bottom: 100px;
+    }
+
+    li{
+        margin-bottom: 10px;
+    }    
+}
+
+main{
+
+p{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.photos{
+    display: flex;
+    gap: 30px;
+}
+
+}
+
+footer{
+    margin-top: 114px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-right{
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: -0.346154px;
+    color: colors.$main-font-color;
+
+&:hover{
+    color: colors.$primary-color;
+    text-decoration: underline;
+}
+}
+    display: flex;
+    gap: 95px;
+li{display: inline;
+margin-right: 30px;}
+}
+
+.socials{
+    display: flex;
+    gap: 24px;
+
+a:hover{
+    transform: scaleY(2);
+}
+}
